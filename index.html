@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>CRUD</title>
+</head>
+<body>
+    <!--*? DESIGN HEADER -->
+    <header>
+        <div class="text">
+            <h1>cruds</h1>
+            <p>product management system </p>
+        </div>
+    </header>
+
+        <!--*? DESIGN INPUTS -->
+        <section>
+            <div class="inputs">
+                <input type="text" placeholder="Title" id="inpTitle">
+                <input onkeyup="clacTotal()" type="number" placeholder="Price" id="inpPrice">
+                <input onkeyup="clacTotal()" type="number" placeholder="Taxes" id="inpTaxes">
+                <input onkeyup="clacTotal()" type="number" placeholder="Ads" id="inpAds">
+                <input onkeyup="clacTotal()" type="number" placeholder="Discout" id="inpDiscount">
+                <small id="total"></small>
+                <input type="number" placeholder="Count" id="inpCount">
+                <input type="text" placeholder="Gategory" id="inpGategory">
+                <button data-text="create" id="create">Create</button>
+            </div>
+        </section>
+
+            <!--*? DESIGN OUTBOX -->
+        <section>
+            <div class="outBox">
+                <input onkeyup="searchLoop(this.value)" type="text" placeholder="Search" id="inpSearch">
+                <button data-text="title"  onclick="changeDesignInput(this.id)" id="search by title">Search by Title</button>
+                <button data-text="gategory"  onclick="changeDesignInput(this.id)" id="search by Gategory">Search by Gategory</button>
+            </div>
+        </section>
+        
+        <!--*? DESIGN BUTTON DALETE ALL -->
+        <section>
+          <div id="DivDaleteAll">
+
+          </div>  
+        </section>
+        
+
+        <!--*? DESIGN TABLE-->
+        <section>
+            <table id="table">
+               <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>Price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>Discount</th>
+                    <th>total</th>
+                    <th>Gategory</th>
+                    <th>updata</th>
+                    <th>dalate</th>
+                </tr>
+                <div id="daleteAll">
+
+                </div>
+            <tbody id="tbody">
+                
+            </tbody>
+            
+            </table> 
+        </section>   
+
+
+
+
+
+
+
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+:root{
+    --bgBody:#191919;
+    --colorTextWhite:#fff;
+    --bgInput:#303030;
+    --colorBoderInputs:#fff;
+    --colorFocusInputs:#000;
+    --bgButton:rgb(106, 121, 10);
+} 
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background: var(--bgBody);
+
+}
+header {
+    color: var(--colorTextWhite);
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+header .text h1{
+    font-family: 600;
+}
+header .text h1,p{
+    text-transform: uppercase;
+    line-height: 30px;
+}
+section{
+    margin-left: 10%;
+    margin-top: 1%;
+}
+section input{
+    background: var(--bgInput);
+    padding: 10px 5px;
+    margin: 6px;
+    color: var(--colorTextWhite);
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid transparent;
+    flex-direction: column;
+    transition: 0.5s;
+}
+#inpTitle,#inpCount,#inpGategory,#inpSearch{
+    width: 90%;
+}
+#inpSearch{
+    margin-top: 0;
+}
+#inpPrice,#inpTaxes,#inpAds,#inpDiscount{
+    width: 200px;
+}
+#total{
+    background: red;
+    margin-left: 6px;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--colorTextWhite);
+}
+#total::before{
+    content: 'Total : ';
+}
+section input:focus{
+    border: 2px solid var(--colorBoderInputs);
+    background: var(--colorHoverInputs);
+    transform: scale(1.05);
+}
+button{
+    width: 90%;
+    background: var(--bgButton);
+    border-radius: 5px;
+    opacity: 0.6;
+    padding: 10px;
+    margin-top: 6px;
+    margin-left: 6px;
+    letter-spacing: 1px;
+    color: var(--colorTextWhite);
+    font-weight: 600;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 1;
+    letter-spacing: 1.4px;
+}
+section .outBox:hover{
+    opacity: 1;
+    letter-spacing: 1.4px;
+}
+section .outBox button{
+    width: 45%;
+}
+section table{
+    color: var(--colorTextWhite);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 15px;
+    text-align: center;
+}
+section table th,td{
+    padding: 2.5px 28.6px;
+}
+section table #updata, #dalete{
+    letter-spacing: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
